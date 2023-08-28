@@ -1,0 +1,7 @@
+def nannakuprematho(soldiers):
+    nearest=1
+    while(nearest*2<=soldiers): #finding the nearest powers of 2 of soldiers because in powers of 2 alive soldier is 1st person whho has knife
+        nearest*=2
+    return((soldiers-nearest)*2+1) #100-64=36 36 soldiers are died to kill the 36 soldiers another 36 soldiers we need so multiply it by 2
+soldiers=int(input("enter number of soldiers:"))
+print("the soldier alive is:",nannakuprematho(soldiers))
